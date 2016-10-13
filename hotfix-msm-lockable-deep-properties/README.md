@@ -1,0 +1,52 @@
+# HS2 Solutions Hotfix for MSM Inheritance Breaking for Deep Properties
+
+This is a hotfix to address a documented AEM OOTB limitation where MSM does not operate with deep properties in regards
+to disabling inheritance when configuring MSM locks on page properties (cq:propertyInheritanceCancelled).
+
+## Contents
+
+- Node update event listener OSGi service (PropagatePropertyInheritanceCancelled)
+- OSGi configuration mapping the service user used by the listener to make required node property updates
+
+## Prerequisites
+
+Because the event listener requires the ability to update JCR nodes, your AEM server will need a service user named
+"content-update-service" that has "write" permissions to the /content path in the JCR.
+
+To create a service user:
+
+- Go to http://(your AEM server):4502/crx/explorer/index.jsp
+- Log in as `admin`
+- Click "User Administration"
+- Click "Create System User"
+- Set values:
+    - UserID: `content-update-service`
+    - Intermediate Path: `system`
+- Click the green checkmark to create the user
+- Close
+- Go to http://(your AEM server):4502/useradmin
+- Find the `content-update-service` user
+- Open the `Permissions` tab and grant `Read|Modify|Create` permissions on `/content`
+- Click `Save`
+
+This user must be present before installing the package, so that the event listener can correctly initialize.
+
+If you already have a service user that you wish to use instead of creating a new service user, you can deploy your own
+OSGi config mapping the service user, similar to the one included in this package, but instead referencing your own
+service user rather than `content-update-service`.
+
+## How to install
+
+If you have a running AEM instance you can build and package the whole project and deploy into AEM with  
+
+    mvn clean install -PautoInstallPackage
+    
+There should be no need to deploy this package to a publish instance, but if you really wish to do so then run
+
+    mvn clean install -PautoInstallPackagePublish
+
+## Alternatives to install
+
+As with any code distributed freely under The MIT License (MIT), you are free to copy the event listener OSGi class
+(PropagatePropertyInheritanceCancelled) and the associated OSGi configuration directly into your code base, modify as
+you see fit, and deploy as part of your own code base.
