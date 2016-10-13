@@ -46,7 +46,7 @@
                         </Embed-Dependency>
                         -->
                         <Sling-Model-Packages>
-                            com.hs2solutions.core
+                            com.hs2solutions.aem.core
                         </Sling-Model-Packages>
                     </instructions>
                 </configuration>
