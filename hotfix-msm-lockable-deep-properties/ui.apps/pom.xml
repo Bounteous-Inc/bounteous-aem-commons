@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.hs2solutions.aem</groupId>
         <artifactId>hotfix-msm-lockable-deep-properties</artifactId>
-        <version>1.0</version>
+        <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -198,7 +198,7 @@
         <dependency>
             <groupId>com.hs2solutions.aem</groupId>
             <artifactId>hotfix-msm-lockable-deep-properties.core</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
