@@ -1,4 +1,6 @@
+# Build files
 *.class
+target
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -13,5 +15,10 @@ hs_err_pid*
 
 # IDE files
 *.iml
-*.project
 .idea
+.classpath
+.project
+
+# Other misc metadata files
+.DS_Store
+.vlt
