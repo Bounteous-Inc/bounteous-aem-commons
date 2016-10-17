@@ -74,10 +74,10 @@
                         <groupId>org.apache.sling</groupId>
                         <artifactId>maven-sling-plugin</artifactId>
                         <configuration>
-                            <!-- Note that this requires /apps/hs2solutions/install to exist!!          -->
+                            <!-- Note that this requires /apps/hs2solutions/hotfix-msm-lockable-deep-properties/install to exist!!          -->
                             <!--    This is typically the case when ui.apps is deployed first                -->
-                            <!--    Otherwise, create /apps/hs2solutions/install manually (CRXDE|Lite)  -->
-                            <slingUrlSuffix>/apps/hs2solutions/install/</slingUrlSuffix>
+                            <!--    Otherwise, create /apps/hs2solutions/hotfix-msm-lockable-deep-properties/install manually (CRXDE|Lite)  -->
+                            <slingUrlSuffix>/apps/hs2solutions/hotfix-msm-lockable-deep-properties/install/</slingUrlSuffix>
                             <failOnError>true</failOnError>
                         </configuration>
                     </plugin>

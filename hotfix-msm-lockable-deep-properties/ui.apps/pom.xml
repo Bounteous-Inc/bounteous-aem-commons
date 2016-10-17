@@ -131,7 +131,7 @@
                         <embedded>
                             <groupId>com.hs2solutions.aem</groupId>
                             <artifactId>hotfix-msm-lockable-deep-properties.core</artifactId>
-                            <target>/apps/hs2solutions/install</target>
+                            <target>/apps/hs2solutions/hotfix-msm-lockable-deep-properties/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
