@@ -1,6 +1,8 @@
 # HS2 Solutions Hotfix for MSM Inheritance Breaking for Deep Properties
 
-This is a hotfix to address a documented AEM OOTB limitation where MSM does not operate with deep properties in regards
+This is a hotfix to address a
+[documented AEM OOTB limitation](https://docs.adobe.com/docs/en/aem/6-2/develop/extending/msm.html)
+where MSM does not operate with deep properties in regards
 to using the cq-msm-lockable attribute to disable inheritance when configuring MSM locks on page properties
 (cq:propertyInheritanceCancelled).
 
