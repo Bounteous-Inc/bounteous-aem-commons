@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/content/rep:policy"/>
+    <filter root="/etc/rep:policy"/>
+    <filter root="/home/groups/rep:policy"/>
+    <filter root="/home/users/rep:policy"/>
+    <filter root="/home/users/system/on-deploy-scripts-service"/>
+    <filter root="/var/on-deploy-script-status/rep:policy"/>
+    <filter root="/var/on-deploy-script-status/README.txt"/>
+</workspaceFilter>
