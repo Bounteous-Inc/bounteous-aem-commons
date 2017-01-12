@@ -6,7 +6,7 @@ deployed only on a local development environment, as it updates content in the J
 This is an example package used to demonstrate how to leverage the `on-deploy-scripts-framework` project at
 [HS2 AEM Commons](https://github.com/HS2-SOLUTIONS/hs2-aem-commons) to implement one-time scripts that run
 on an AEM server upon deploy of a code bundle.  See the `on-deploy-scripts-framework` project for use cases and
-reasons why this can be a huge time save for your AEM team!
+reasons why this can be a huge time saver for your AEM team!
 
 
 ## How to install
