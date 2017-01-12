@@ -40,7 +40,17 @@ service user rather than `content-update-service`.
 
 ## How to install
 
-If you have a running AEM instance you can build and package the whole project and deploy into AEM with  
+NOTE: The current release package is built against AEM 6.0 APIs and tested on AEM 6.1. For alternate AEM versions,
+please submit an issue requesting a build for your version of AEM.  Or, feel free to build the project from sources,
+changing the dependencies as appropriate.
+
+1. Download the `hotfix-msm-lockable-deep-properties.ui.apps-1.0.0.zip` package under the `releases` folder
+1. Upload the package to an AEM author instance via CRX package manager and install
+1. There should be no need to deploy this package to a publish instance
+
+## How to install from sources
+
+If you have a running AEM author instance at http://localhost:4502 you can build and deploy into AEM with  
 
     mvn clean install -PautoInstallPackage
     
