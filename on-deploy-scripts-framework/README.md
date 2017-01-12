@@ -1,7 +1,7 @@
 # On-Deploy Script Framework
 
-This is a framework to allow developers to create and leverage one-time scripts that run on the AEM server
-on-deploy of a code bundle.
+This is a framework to allow developers to create and leverage one-time scripts that run on an AEM server
+on deploy of a code bundle.
 
 
 ## Use Cases
@@ -73,8 +73,8 @@ requesting a build for your version of AEM.  Or, feel free to build the project 
 dependencies as appropriate.
 
 1. Download the `on-deploy-scripts-framework.ui-1.0.0.zip` package under the `releases/aem62` folder
-1. Upload the packages to AEM author via CRX package manager and install
-1. Upload the packages to AEM publish via CRX package manager and install
+1. Upload the package to an AEM author instance via CRX package manager and install
+1. Upload the package to an AEM publish instance via CRX package manager and install
 
 ## How to install from sources
 
@@ -105,7 +105,7 @@ See the `on-deploy-scripts-framework-example-scripts` project in
 [HS2 AEM Commons](https://github.com/HS2-SOLUTIONS/hs2-aem-commons) for an example `OnDeployScriptProvider`
 implementation and a handful of script examples.
 
-**NOTE: `on-deploy-scripts-framework-example-scripts` should be
+**NOTE: `on-deploy-scripts-framework-example-scripts` (the EXAMPLES project) should be
 deployed only on a local development environment, as it updates content in the JCR to demonstrate functionality.**
 
 
