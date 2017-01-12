@@ -1,7 +1,7 @@
 # On-Deploy Script Framework
 
-This is a framework to allow developers to create and leverage one-time scripts that run upon an AEM server
-on deploy of a code bundle.
+This is a framework to allow developers to create and leverage one-time scripts that run on an AEM server
+upon deploy of a code bundle.
 
 
 ## Use Cases
