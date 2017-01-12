@@ -23,7 +23,7 @@
     <parent>
         <groupId>com.hs2solutions.aem</groupId>
         <artifactId>on-deploy-scripts-framework</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -163,7 +163,7 @@
         <dependency>
             <groupId>com.hs2solutions.aem</groupId>
             <artifactId>on-deploy-scripts-framework.core</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 </project>

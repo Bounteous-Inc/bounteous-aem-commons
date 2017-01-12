@@ -72,7 +72,7 @@ NOTE: The current release package is built against AEM 6.2. For alternate AEM ve
 requesting a build for your version of AEM.  Or, feel free to build the project from sources, changing the
 dependencies as appropriate.
 
-1. Download the XXX package
+1. Download the `on-deploy-scripts-framework.ui-1.0.0.zip` package under the `releases/aem62` folder
 1. Upload the packages to AEM author via CRX package manager and install
 1. Upload the packages to AEM publish via CRX package manager and install
 

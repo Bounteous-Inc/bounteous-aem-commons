@@ -19,7 +19,7 @@
     <groupId>com.hs2solutions.aem</groupId>
     <artifactId>on-deploy-scripts-framework-example-scripts</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <description>Framework for executing developer scripts on deployment of an OSGi bundle.</description>
 
     <modules>
@@ -444,7 +444,7 @@
             <dependency>
                 <groupId>com.hs2solutions.aem</groupId>
                 <artifactId>on-deploy-scripts-framework.core</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>1.0.0</version>
                 <scope>provided</scope>
             </dependency>
         </dependencies>
