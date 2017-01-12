@@ -8,6 +8,6 @@
     <filter root="/home/groups/rep:policy"/>
     <filter root="/home/users/rep:policy"/>
     <filter root="/home/users/system/on-deploy-scripts-service"/>
-    <filter root="/var/on-deploy-script-status/rep:policy"/>
-    <filter root="/var/on-deploy-script-status/README.txt"/>
+    <filter root="/var/on-deploy-scripts-status/rep:policy"/>
+    <filter root="/var/on-deploy-scripts-status/README.txt"/>
 </workspaceFilter>

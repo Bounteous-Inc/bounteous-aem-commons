@@ -33,13 +33,13 @@ import static org.osgi.framework.Constants.SERVICE_VENDOR;
  * <p>
  * This class manages scripts so that they only run once (unless the script
  * fails).  Script execution statuses are stored in the JCR @
- * /var/hs2solutions/on-deploy-script-status.
+ * /var/hs2solutions/on-deploy-scripts-status.
  * <p>
  * Scripts are specified by implementing a OnDeployScriptProvider service that
  * returns a list of OnDeployScript instances.
  * <p>
  * NOTE: Since it's always a possibility that
- * /var/hs2solutions/on-deploy-script-status will be deleted in the JCR,
+ * /var/hs2solutions/on-deploy-scripts-status will be deleted in the JCR,
  * scripts should be written defensively in case they are actually run more
  * than once.  This also covers the scenario where a script is run a second
  * time after failing the first time.
@@ -137,7 +137,7 @@ public class OnDeployExecutorImpl implements OnDeployExecutor {
     }
 
     protected void runScript(ResourceResolver resourceResolver, Session session, OnDeployScript script) {
-        String statusNodePath = "/var/hs2solutions/on-deploy-script-status/" + script.getClass().getName();
+        String statusNodePath = "/var/hs2solutions/on-deploy-scripts-status/" + script.getClass().getName();
         Node statusNode = getOrCreateStatusTrackingNode(session, statusNodePath);
         String status = getScriptStatus(resourceResolver, statusNode, statusNodePath);
         if (status == null || status.equals("fail")) {
