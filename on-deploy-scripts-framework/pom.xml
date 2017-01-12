@@ -356,11 +356,6 @@
                         <enabled>false</enabled>
                     </snapshots>
                 </repository>
-                <repository>
-                    <id>twcable-aem-releases</id>
-                    <name>Time Warner Cable Public AEM Repository</name>
-                    <url>http://dl.bintray.com/twcable/aem</url>
-                </repository>
             </repositories>
 
             <pluginRepositories>
