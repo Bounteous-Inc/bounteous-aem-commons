@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
+    <filter root="/apps/on-deploy-scripts-framework">
+        <exclude pattern="/apps/on-deploy-scripts-framework/install" />
+    </filter>
     <filter root="/content/rep:policy"/>
     <filter root="/etc/rep:policy"/>
     <filter root="/home/groups/rep:policy"/>
