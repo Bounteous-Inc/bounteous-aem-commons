@@ -6,27 +6,27 @@ upon deploy of a code bundle.
 
 ## Use Cases
 
-##### Content updates that correlate with code updates/refactors
+#### Content updates that correlate with code updates/refactors
 - Updating all instance of a component to a new `sling:resourceType` name or path.  This often happens when developers
 reorganize the code structure such as /apps/mysite/facebook and /apps/mysite/twitter -> /apps/mysite/social/facebook
-/apps/mysite/social/twitter.
+and /apps/mysite/social/twitter.
 - Copying a node property to a new property name.  This often happens as components over time refer to a single type
 of data but with a different name, and there is a desire to consolidate to a common name so that code can easily work
 with all nodes - e.g. `postal/zip/zipcode` -> `postalcode`
 
-##### Admin updates that would need to be done on all servers in all environments
+#### Admin updates that would need to be done on all servers in all environments
 - Creating a user group
 - Adding users/groups as members of a group
 - Creating a site blueprint
 - Configuring cloud configs (e.g. translation configuration) for a node tree
 
-##### Mass content updates required by business that would be onerous for authors
+#### Mass content updates required by business that would be onerous for authors
 - Updating a phone number everywhere from 555-555-5555 to 999-999-9999
 - Updating all pages of a particular type to set a property such as "Hide in Navigation"
 - Deleting all instances of a particular component
 - Removing obsolete content
 
-##### One-time content creations that you prefer not to have in your content package
+#### One-time content creations that you prefer not to have in your content package
 - Preloading of data into AEM from a remote data source (content package could have thousands of nodes or more
 depending on the data source)
 - Creation of a default site structure (having this in your content package requires you to use a `merge` or `update`
@@ -101,7 +101,9 @@ useful instance variables.
 
 ## Example Implementation
 
-See the `on-deploy-scripts-framework-example-scripts` project in
+See the
+[on-deploy-scripts-framework-example-scripts](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/master/on-deploy-scripts-framework-example-scripts)
+project in
 [HS2 AEM Commons](https://github.com/HS2-SOLUTIONS/hs2-aem-commons) for an example `OnDeployScriptProvider`
 implementation and a handful of script examples.
 
