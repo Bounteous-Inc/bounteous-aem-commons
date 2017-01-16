@@ -1,4 +1,4 @@
-# On-Deploy Script Framework Example Scripts
+# On-Deploy Scripts Framework Example Scripts
 
 **NOTE: `on-deploy-scripts-framework-example-scripts` should be
 deployed only on a local development environment, as it updates content in the JCR to demonstrate functionality.**

@@ -1,4 +1,4 @@
-# On-Deploy Script Framework
+# On-Deploy Scripts Framework
 
 This is a framework to allow developers to create and leverage one-time scripts that run on an AEM server
 upon deploy of a code bundle.
