@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/multi-site-demo/hfl-core">
+        <exclude pattern="/apps/multi-site-demo/hfl-core/install" />
+    </filter>
+    <filter root="/etc/clientlibs/multi-site-demo/hfl-core" />
+</workspaceFilter>
