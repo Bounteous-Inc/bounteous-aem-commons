@@ -2,15 +2,11 @@
 <%@page session="false" %>
 
 <body class="page-template-${component.cellName}">
-    <div class="page-header">
-        <cq:include path="page-header-par" resourceType="foundation/components/iparsys"/>
-    </div>
+    <cq:include script="page-header.jsp"/>
 
     <div class="page-content">
         <cq:include script="main.jsp"/>
     </div>
 
-    <div class="page-footer">
-        <cq:include path="page-footer-par" resourceType="foundation/components/iparsys"/>
-    </div>
+    <cq:include script="page-footer.jsp"/>
 </body>
