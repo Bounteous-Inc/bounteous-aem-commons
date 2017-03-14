@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/multi-site-demo/hfl-boars" />
+    <filter root="/content/multi-site-demo/hfl-boars/.content.xml" />
     <filter root="/etc/clientlibs/multi-site-demo/hfl-boars" />
+    <filter root="/etc/designs/multi-site-demo/hfl-boars" />
 </workspaceFilter>

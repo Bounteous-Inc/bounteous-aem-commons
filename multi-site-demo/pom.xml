@@ -442,6 +442,13 @@
                 <version>6.2.0</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- Taglibs -->
+            <dependency>
+                <groupId>com.day.cq.wcm</groupId>
+                <artifactId>cq-wcm-taglib</artifactId>
+                <version>5.7.4</version>
+                <scope>provided</scope>
+            </dependency>
             <!-- JCR -->
             <dependency>
                 <groupId>javax.jcr</groupId>
