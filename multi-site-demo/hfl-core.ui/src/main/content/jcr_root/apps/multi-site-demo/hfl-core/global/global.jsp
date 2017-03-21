@@ -7,3 +7,7 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@taglib prefix="xss" uri="http://www.adobe.com/consulting/acs-aem-commons/xss" %>
 <%@taglib prefix="wcmmode" uri="http://www.adobe.com/consulting/acs-aem-commons/wcmmode" %>
+<%@taglib prefix="wcm" uri="http://www.adobe.com/consulting/acs-aem-commons/wcm" %>
+<%@taglib prefix="msd" uri="http://www.hs2solutions.com/aem/tags/multisitedemo" %>
+
+<wcm:defineObjects/>

@@ -2,5 +2,5 @@
 <%@page session="false"%>
 
 <div class="page-footer">
-    <cq:include path="page-footer-par" resourceType="foundation/components/iparsys"/>
+    <!-- Cool page footer stuff goes here in a real implementation -->
 </div>

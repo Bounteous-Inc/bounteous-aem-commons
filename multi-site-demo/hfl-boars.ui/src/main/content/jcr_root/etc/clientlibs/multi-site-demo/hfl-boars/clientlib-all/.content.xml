@@ -4,5 +4,6 @@
     categories="hfl.boars.all"
     embed="[
         hfl.core.base,
+        hfl.core.header,
         hfl.boars.site
     ]"/>
