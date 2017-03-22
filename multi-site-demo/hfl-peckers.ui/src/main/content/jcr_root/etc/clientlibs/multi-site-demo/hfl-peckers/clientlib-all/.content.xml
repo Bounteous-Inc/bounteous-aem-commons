@@ -6,5 +6,6 @@
         hfl.core.base,
         hfl.core.header,
         hfl.core.schedule,
+        hfl.core.schedule-tout,
         hfl.peckers.site
     ]"/>
