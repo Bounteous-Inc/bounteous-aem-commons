@@ -7,5 +7,6 @@
         hfl.core.header,
         hfl.core.schedule,
         hfl.core.schedule-tout,
+        hfl.core.trophy,
         hfl.peckers.site
     ]"/>
