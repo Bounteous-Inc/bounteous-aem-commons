@@ -9,6 +9,9 @@
             </p>
         </c:when>
         <c:otherwise>
+            <c:if test="${not empty globalProperties.logo}">
+                <img class="logo" src="${globalProperties.logo}"/>
+            </c:if>
             <h3>${mergedProperties.message}</h3>
             <a href="${sharedProperties.path}.html">${mergedProperties.ctaLabel}</a>
         </c:otherwise>
