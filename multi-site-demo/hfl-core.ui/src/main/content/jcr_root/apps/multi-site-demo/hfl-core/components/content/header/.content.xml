@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="HFL Header"
     sling:resourceSuperType="foundation/components/parbase"
-    componentGroup="General"/>
+    componentGroup="HFL General"/>

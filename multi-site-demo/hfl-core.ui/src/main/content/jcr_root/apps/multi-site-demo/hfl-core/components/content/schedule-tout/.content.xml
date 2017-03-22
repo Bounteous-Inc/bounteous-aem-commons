@@ -3,4 +3,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="HFL Schedule Tout"
     sling:resourceSuperType="foundation/components/parbase"
-    componentGroup="General"/>
+    componentGroup="HFL General"/>
