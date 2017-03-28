@@ -10,7 +10,7 @@
                 $.each(data, function(idx, game) {
                     var gameHtml = '<div class="game" data-is-home="' + game.isHomeGame + '">';
                     gameHtml += '<span class="game-name">' + game.name + ':</span>';
-                    gameHtml += new Date(game.date).toDateString();
+                    gameHtml += new Date(game.date).toLocaleString();
                     gameHtml += " (";
                     gameHtml += gamesList.data(game.isHomeGame ? "label-home" : "label-away");
                     gameHtml += ")";
