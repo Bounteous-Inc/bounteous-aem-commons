@@ -8,6 +8,7 @@
         sling:redirectStatus="{Long}302"
         sling:resourceType="foundation/components/redirect"
         sling:vanityOrder="{Long}1000"
+        hideInNav="{Boolean}true"
         redirectTarget="/content/multi-site-demo/hfl-boars/en"/>
     <en/>
 </jcr:root>
