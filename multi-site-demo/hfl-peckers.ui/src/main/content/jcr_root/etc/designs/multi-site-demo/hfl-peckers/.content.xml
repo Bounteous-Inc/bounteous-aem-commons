@@ -17,6 +17,7 @@
                 ,/libs/foundation/components/reference,
                 ,/libs/foundation/components/table,
                 ,/libs/foundation/components/text,
+                ,/libs/foundation/components/title,
                 ]">
             </main-par>
         </basepage>

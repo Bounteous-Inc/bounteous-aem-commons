@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-03-27T22:52:47.678-05:00"
+        cq:lastModifiedBy="admin"
+        cq:scaffolding="/etc/scaffolding/multi-site-demo/hfl-boars/game"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Game 1"
+        sling:resourceType="multi-site-demo/hfl-core/components/page/data"
+        date="{Date}2017-01-01T12:00:00.000-06:00"
+        isHomeGame="true"/>
+</jcr:root>

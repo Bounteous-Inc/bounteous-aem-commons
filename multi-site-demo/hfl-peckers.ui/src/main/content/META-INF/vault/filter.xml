@@ -2,6 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/multi-site-demo/hfl-peckers" />
     <filter root="/content/multi-site-demo/hfl-peckers/en/data/games/.content.xml" />
+    <filter root="/content/multi-site-demo/hfl-peckers/style-guide" />
     <filter root="/etc/clientlibs/multi-site-demo/hfl-peckers" />
     <filter root="/etc/designs/multi-site-demo/hfl-peckers" />
     <filter root="/etc/map.publish" mode="update" />
