@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2017-03-28T00:36:26.235-05:00"
+        cq:lastModified="{Date}2017-04-29T12:58:40.237-05:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/multi-site-demo/hfl-peckers/templates/freeform"
         jcr:primaryType="cq:PageContent"
@@ -121,6 +121,23 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="multi-site-demo/hfl-core/components/content/schedule"
                 allowFilter="true"/>
+            <text_904966850_copy
+                jcr:created="{Date}2017-03-27T23:38:59.210-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-04-29T12:58:28.492-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>&lt;b>&amp;nbsp;&lt;/b>&lt;/p>&#xa;&lt;p>&lt;b>Example Trophy&lt;/b>&lt;/p>&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <trophy
+                jcr:created="{Date}2017-04-29T12:58:31.591-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-04-29T12:58:40.235-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/trophy"
+                fileReference="/content/dam/hfl/peckers/trophy1.png"/>
         </main-par>
     </jcr:content>
     <data/>
