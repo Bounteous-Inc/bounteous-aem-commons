@@ -5,6 +5,7 @@
     <filter root="/content/multi-site-demo/hfl-peckers/style-guide" />
     <filter root="/etc/clientlibs/multi-site-demo/hfl-peckers" />
     <filter root="/etc/designs/multi-site-demo/hfl-peckers" />
-    <filter root="/etc/map.publish" mode="update" />
+    <filter root="/etc/map.publish/http/www.greenbaypeckers.com" />
+    <filter root="/etc/map.publish/http/www_greenbaypeckers_com" />
     <filter root="/etc/scaffolding/multi-site-demo/hfl-peckers" />
 </workspaceFilter>
