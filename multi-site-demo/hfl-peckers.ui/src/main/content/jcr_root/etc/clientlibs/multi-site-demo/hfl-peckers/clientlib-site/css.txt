@@ -3,3 +3,4 @@
 base.less
 header.less
 schedule-tout.less
+trophy.less

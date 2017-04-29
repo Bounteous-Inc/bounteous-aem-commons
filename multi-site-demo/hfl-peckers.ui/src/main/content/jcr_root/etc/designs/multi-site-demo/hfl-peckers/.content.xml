@@ -12,6 +12,7 @@
                 components="[
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule,
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule-tout,
+                ,/apps/multi-site-demo/hfl-core/components/content/trophy,
                 ,/libs/foundation/components/image,
                 ,/libs/foundation/components/list,
                 ,/libs/foundation/components/reference,
