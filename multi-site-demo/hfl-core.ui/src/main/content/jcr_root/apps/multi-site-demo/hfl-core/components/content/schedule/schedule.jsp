@@ -10,7 +10,7 @@
         </c:if>
         <div class="schedule-filter">
             <label>
-                <input type="radio" name="filter" value="all"/><span>${sharedProperties.copyFilterAll}</span>
+                <input type="radio" name="filter" value="all" checked/><span>${sharedProperties.copyFilterAll}</span>
             </label>
             <label>
                 <input type="radio" name="filter" value="home"/><span>${sharedProperties.copyFilterHome}</span>
