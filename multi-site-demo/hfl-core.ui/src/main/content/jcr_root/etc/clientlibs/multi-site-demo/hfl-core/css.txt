@@ -1,4 +1,5 @@
 #base=less
 
 reset.less
+core.less
 authoring.less
