@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="hfl.boars.all"
+    embed="[
+        hfl.core.base,
+        hfl.core.header,
+        hfl.core.schedule,
+        hfl.core.schedule-tout,
+        hfl.boars.site
+    ]"/>

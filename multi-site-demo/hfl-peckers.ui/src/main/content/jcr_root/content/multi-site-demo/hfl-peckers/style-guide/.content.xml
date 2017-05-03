@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-04-29T12:58:40.237-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/multi-site-demo/hfl-peckers/templates/freeform"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Style Guide"
+        sling:resourceType="multi-site-demo/hfl-core/components/page/freeform">
+        <schedule-tout
+            jcr:lastModified="{Date}2017-03-27T23:26:08.052-05:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="multi-site-demo/hfl-core/components/content/schedule-tout"
+            ctaLabel="Buy Tickets"
+            message="Want to see the game?"/>
+        <shared-component-properties jcr:primaryType="nt:unstructured">
+            <multi-site-demo jcr:primaryType="nt:unstructured">
+                <hfl-core jcr:primaryType="nt:unstructured">
+                    <components jcr:primaryType="nt:unstructured">
+                        <content jcr:primaryType="nt:unstructured">
+                            <header
+                                jcr:lastModified="{Date}2017-03-27T23:24:45.856-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="multi-site-demo/hfl-core/components/content/header"
+                                slogan="This is the site slogan"/>
+                            <schedule-tout
+                                jcr:lastModified="{Date}2017-03-27T23:26:30.086-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="multi-site-demo/hfl-core/components/content/schedule-tout"
+                                ctaLabel="Buy Tickets"
+                                message="Want to see the game?"
+                                path="/content/multi-site-demo/hfl-peckers/style-guide"/>
+                            <schedule
+                                jcr:lastModified="{Date}2017-03-27T23:27:05.390-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="multi-site-demo/hfl-core/components/content/schedule"
+                                copyFilterAll="All Games"
+                                copyFilterAway="Away Games"
+                                copyFilterHome="Home Games"
+                                copyLabelAway="Away Game"
+                                copyLabelHome="Home Game"/>
+                        </content>
+                    </components>
+                </hfl-core>
+            </multi-site-demo>
+        </shared-component-properties>
+        <page-header
+            jcr:lastModified="{Date}2017-03-27T23:25:03.200-05:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="multi-site-demo/hfl-core/components/content/header"/>
+        <global-component-properties
+            jcr:lastModified="{Date}2017-03-27T23:25:27.494-05:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="multi-site-demo/hfl-core/components/content/header"
+            logo="/content/dam/hfl/peckers/logo.png"/>
+        <main-par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title_492845176
+                jcr:created="{Date}2017-03-28T00:33:44.303-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-28T00:33:56.468-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text"
+                sling:resourceType="foundation/components/title"/>
+            <text_1982930513
+                jcr:created="{Date}2017-03-28T00:34:05.532-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-28T00:36:26.233-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>Standard Text&lt;/p>&#xa;&lt;p>&lt;b>Bold Text&lt;/b>&lt;/p>&#xa;&lt;p>&lt;i>Italic Text&lt;/i>&lt;/p>&#xa;&lt;p>&lt;u>Underlined Text&lt;/u>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <title
+                jcr:created="{Date}2017-03-28T00:33:22.022-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-28T00:33:33.859-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Components"
+                sling:resourceType="foundation/components/title"/>
+            <text
+                jcr:created="{Date}2017-03-27T23:38:27.145-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-27T23:39:48.908-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>&lt;b>Example Schedule Without Filter&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <schedule
+                jcr:created="{Date}2017-03-27T23:26:40.610-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-27T23:26:40.610-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/schedule"/>
+            <text_904966850
+                jcr:created="{Date}2017-03-27T23:38:59.210-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-27T23:39:53.991-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>&lt;b>&amp;nbsp;&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Example Schedule With Filter&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <schedule_916457097
+                jcr:created="{Date}2017-03-27T23:39:58.257-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-27T23:40:02.897-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/schedule"
+                allowFilter="true"/>
+            <text_904966850_copy
+                jcr:created="{Date}2017-03-27T23:38:59.210-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-04-29T12:58:28.492-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>&lt;b>&amp;nbsp;&lt;/b>&lt;/p>&#xa;&lt;p>&lt;b>Example Trophy&lt;/b>&lt;/p>&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xa;"
+                textIsRich="true"/>
+            <trophy
+                jcr:created="{Date}2017-04-29T12:58:31.591-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-04-29T12:58:40.235-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/trophy"
+                fileReference="/content/dam/hfl/peckers/trophy1.png"/>
+        </main-par>
+    </jcr:content>
+    <data/>
+</jcr:root>
