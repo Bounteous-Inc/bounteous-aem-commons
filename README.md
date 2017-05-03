@@ -12,6 +12,11 @@ where MSM does not operate with deep properties in regards
 to using the cq-msm-lockable attribute to disable inheritance when configuring MSM locks on page properties
 (cq:propertyInheritanceCancelled).
 
+### multi-site-demo
+This is a demo project used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
+The project demonstrates 15 coding principles for multi-site platforms.  See more details on the
+[Adobe community blog](http://blogs.adobe.com/contentmanagement/2017/04/24/aem-multi-site-tips-tricks-preview-immerse-2017).
+
 ### on-deploy-scripts-framework
 This is a framework to allow developers to create and leverage one-time scripts that run on an AEM server
 upon deploy of a code bundle. See the project documentation for use cases and reasons why this can be a huge
