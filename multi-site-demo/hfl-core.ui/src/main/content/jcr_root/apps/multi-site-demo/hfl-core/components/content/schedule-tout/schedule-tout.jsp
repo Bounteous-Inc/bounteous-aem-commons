@@ -3,7 +3,7 @@
 
 <div>
     <c:choose>
-        <c:when test="${empty sharedProperties.path or empty sharedProperties.message or empty sharedProperties.ctaLabel}">
+        <c:when test="${empty sharedProperties.path or empty mergedProperties.message or empty mergedProperties.ctaLabel}">
             <p class="author-msg">
                 Please configure all Shared Properties.
             </p>
