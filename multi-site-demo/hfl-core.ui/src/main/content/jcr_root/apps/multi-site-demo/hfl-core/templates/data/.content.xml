@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Generic page for a scaffolded data item."
+    jcr:primaryType="cq:Template"
+    jcr:title="HFL Data Page"
+    allowedPaths="[/nowhere]">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="multi-site-demo/hfl-core/components/page/data"/>
+</jcr:root>

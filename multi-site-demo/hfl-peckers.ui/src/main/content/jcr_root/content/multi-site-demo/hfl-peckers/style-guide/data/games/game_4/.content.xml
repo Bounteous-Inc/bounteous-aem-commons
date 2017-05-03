@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-03-27T22:39:53.506-05:00"
+        cq:lastModifiedBy="admin"
+        cq:scaffolding="/etc/scaffolding/multi-site-demo/hfl-peckers/game"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Game 4"
+        sling:resourceType="multi-site-demo/hfl-core/components/page/data"
+        date="{Date}2017-01-04T15:00:00.000-06:00"
+        isHomeGame="true"/>
+</jcr:root>
