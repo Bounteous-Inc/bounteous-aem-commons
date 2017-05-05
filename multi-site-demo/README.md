@@ -22,7 +22,7 @@ NOTE: The current release code packages are built and tested against AEM 6.2. Fo
 to build the code packages (all but `hfl-content-1.0.zip`) from sources, changing the dependencies as appropriate.
 
 1. Download the following packages from under the `releases` folder:
-    - (code) `hfl-core.ui-1.0.0-SNAPSHOT.zip` (contains embedded `acs-aem-commons-content-3.7.0.zip`)
+    - (code) `hfl-core.ui-1.0.0-SNAPSHOT.zip` (contains embedded `acs-aem-commons-content-3.8.5-SNAPSHOT.zip`)
     - (code) `hfl-boars.ui-1.0.0-SNAPSHOT.zip`
     - (code) `hfl-peckers.ui-1.0.0-SNAPSHOT.zip`
     - (content) `hfl-content-1.0.zip`
