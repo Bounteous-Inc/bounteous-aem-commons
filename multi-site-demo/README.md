@@ -15,6 +15,11 @@ The project demonstrates 15 coding principles for multi-site platforms.  See mor
       content authors.
     - This content package is necessary to fully demo the coding principles w/o authoring the entire site contents
       on your own.
+- Adobe IMMERSE 2017 presentation deck
+    - A PowerPoint deck used to give the mentality and reasoning behind the 15 principles demonstrated by this project
+      along with a 16th principle supported by the
+      [On-Deploy Script Framework](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/master/on-deploy-scripts-framework)
+    - Download [immerse-multi-site-success.pptx](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/blob/master/multi-site-demo/releases/immerse-multi-site-success.pptx)
 
 ## How to install
 
