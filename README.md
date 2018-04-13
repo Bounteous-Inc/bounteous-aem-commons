@@ -22,6 +22,5 @@ This is a framework to allow developers to create and leverage one-time scripts 
 upon deploy of a code bundle. See the project documentation for use cases and reasons why this can be a huge
 time saver for your AEM team!
 
-### on-deploy-scripts-framework-example-scripts
-This is an example package used to demonstrate how to leverage the `on-deploy-scripts-framework` project
-to implement one-time scripts that run on an AEM server upon deploy of a code bundle.
+This feature is now offically part of
+[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/on-deploy-scripts/index.html)
