@@ -4,6 +4,7 @@
     <filter root="/apps/multi-site-demo/hfl-core">
         <exclude pattern="/apps/multi-site-demo/hfl-core/install" />
     </filter>
+    <filter root="/apps/multi-site-demo/hfl-core-2" />
     <filter root="/etc/clientlibs/multi-site-demo/hfl-core" />
     <filter root="/etc/clientlibs/multi-site-demo/shared-component-properties" />
 </workspaceFilter>
