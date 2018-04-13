@@ -23,4 +23,4 @@ upon deploy of a code bundle. See the project documentation for use cases and re
 time saver for your AEM team!
 
 This feature is now offically part of
-[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/on-deploy-scripts/index.html)
+[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/on-deploy-scripts/index.html).
