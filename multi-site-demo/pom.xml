@@ -449,6 +449,13 @@
                 <version>2.0</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- WCM Core Components -->
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.all</artifactId>
+                <type>zip</type>
+                <version>2.0.6</version>
+            </dependency>
             <!-- ACS AEM Commons -->
             <dependency>
                 <groupId>com.adobe.acs</groupId>

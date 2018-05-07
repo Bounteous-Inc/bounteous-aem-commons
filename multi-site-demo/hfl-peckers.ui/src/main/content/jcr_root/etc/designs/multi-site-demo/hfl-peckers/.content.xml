@@ -10,11 +10,11 @@
             <main-par
                 jcr:primaryType="nt:unstructured"
                 components="[
+                ,/apps/multi-site-demo/hfl-core/components/content/list,
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule,
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule-tout,
                 ,/apps/multi-site-demo/hfl-core/components/content/trophy,
                 ,/libs/foundation/components/image,
-                ,/libs/foundation/components/list,
                 ,/libs/foundation/components/reference,
                 ,/libs/foundation/components/table,
                 ,/libs/foundation/components/text,
