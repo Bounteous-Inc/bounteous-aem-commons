@@ -62,7 +62,7 @@
             logo="/content/dam/hfl/boars/logo.png"/>
         <main-par
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="foundation/components/parsys">
+            sling:resourceType="wcm/foundation/components/responsivegrid">
             <title_492845176
                 jcr:created="{Date}2017-03-28T00:33:44.303-05:00"
                 jcr:createdBy="admin"
