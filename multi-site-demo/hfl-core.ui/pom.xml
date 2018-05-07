@@ -231,11 +231,6 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.day.cq.wcm</groupId>
-            <artifactId>cq-wcm-taglib</artifactId>
-        </dependency>
-
         <!-- ACS AEM Commons -->
         <dependency>
             <groupId>com.adobe.acs</groupId>
