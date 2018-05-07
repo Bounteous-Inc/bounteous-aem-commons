@@ -70,14 +70,14 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Text"
-                sling:resourceType="foundation/components/title"/>
+                sling:resourceType="multi-site-demo/hfl-core/components/content/title"/>
             <text_1982930513
                 jcr:created="{Date}2017-03-28T00:34:05.532-05:00"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-03-28T00:36:26.233-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/text"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/text"
                 text="&lt;p>Standard Text&lt;/p>&#xa;&lt;p>&lt;b>Bold Text&lt;/b>&lt;/p>&#xa;&lt;p>&lt;i>Italic Text&lt;/i>&lt;/p>&#xa;&lt;p>&lt;u>Underlined Text&lt;/u>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                 textIsRich="true"/>
             <title
@@ -87,14 +87,14 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Components"
-                sling:resourceType="foundation/components/title"/>
+                sling:resourceType="multi-site-demo/hfl-core/components/content/title"/>
             <text
                 jcr:created="{Date}2017-03-27T23:38:27.145-05:00"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2017-03-27T23:39:48.908-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/text"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/text"
                 text="&lt;p>&lt;b>Example Schedule Without Filter&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xd;&#xa;"
                 textIsRich="true"/>
             <schedule
@@ -110,7 +110,7 @@
                 jcr:lastModified="{Date}2017-03-27T23:39:53.991-05:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/text"
+                sling:resourceType="multi-site-demo/hfl-core/components/content/text"
                 text="&lt;p>&lt;b>&amp;nbsp;&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Example Schedule With Filter&lt;/b>&lt;/p>&#xd;&#xa;&lt;p>&lt;b>=========================&lt;/b>&lt;/p>&#xd;&#xa;"
                 textIsRich="true"/>
             <schedule_916457097
