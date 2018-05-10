@@ -73,6 +73,8 @@ public class BasePageImpl implements BasePage {
 
     @Override
     public String[] getClientLibCategories() {
+        // FIXME: Custom hack for grabbing the clientlib from the design.  This should
+        // FIXME: e updated to latest standard practices.
         String clientlib = currentDesign.getContentResource().getValueMap().get("clientLib", String.class);
         return StringUtils.isNotBlank(clientlib) ? new String[] { clientlib } : new String[0];
     }
@@ -84,7 +86,9 @@ public class BasePageImpl implements BasePage {
 
     @Override
     public String getAppResourcesPath() {
-        return superTypePage.getAppResourcesPath();
+        // FIXME: This is a complete hack to set the path for favicon icons that are not
+        // FIXME: currently stored within the clientlibs in use.
+        return currentDesign.getPath();
     }
 
     @Override
