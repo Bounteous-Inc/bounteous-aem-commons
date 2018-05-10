@@ -1,0 +1,9 @@
+<div class="cmp-schedule-tout"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.scheduleTout="com.hs2solutions.aem.hfl.core.models.ScheduleTout"
+     data-sly-test.hasContent="${scheduleTout.message && scheduleTout.ctaUrl && scheduleTout.ctaLabel}">
+    <img data-sly-test="${scheduleTout.logoSrc}" class="logo" src="${scheduleTout.logoSrc}" alt="Logo"/>
+    <h3>${scheduleTout.message}</h3>
+    <a href="${scheduleTout.ctaUrl}">${scheduleTout.ctaLabel}</a>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent}"></sly>
