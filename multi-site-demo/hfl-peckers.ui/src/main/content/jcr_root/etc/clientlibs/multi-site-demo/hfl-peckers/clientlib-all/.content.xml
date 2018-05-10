@@ -5,6 +5,7 @@
     dependencies="[jquery]"
     embed="[
         hfl.core.base,
+        core.wcm.components.image.v2,
         hfl.core.header,
         hfl.core.schedule,
         hfl.core.schedule-tout,
