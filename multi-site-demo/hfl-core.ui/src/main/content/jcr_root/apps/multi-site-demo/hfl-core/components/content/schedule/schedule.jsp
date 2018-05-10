@@ -29,6 +29,6 @@
          data-resource="${resource.path}"
          data-label-home="${sharedProperties.copyLabelHome}"
          data-label-away="${sharedProperties.copyLabelAway}">
-        <!-- Content populated via JavsScript -->
+        <!-- Content populated via JavaScript -->
     </div>
 </div>

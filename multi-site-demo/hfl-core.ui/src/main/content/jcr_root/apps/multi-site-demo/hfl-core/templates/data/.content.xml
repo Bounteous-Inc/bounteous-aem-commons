@@ -6,5 +6,5 @@
     allowedPaths="[/nowhere]">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="multi-site-demo/hfl-core/components/page/data"/>
+        sling:resourceType="multi-site-demo/hfl-core/components/page/datapage"/>
 </jcr:root>

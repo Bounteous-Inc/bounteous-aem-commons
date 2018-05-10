@@ -65,7 +65,7 @@ public class Schedule extends SlingSafeMethodsServlet {
             queryParams.put("path", homePage.getPath() + "/data/games");
             queryParams.put("p.limit", "-1");
             queryParams.put("1_property", "sling:resourceType");
-            queryParams.put("1_property.value", "multi-site-demo/hfl-core/components/page/data");
+            queryParams.put("1_property.value", "multi-site-demo/hfl-core/components/page/datapage");
             queryParams.put("orderby", "@date");
 
             Query query = queryBuilder.createQuery(PredicateGroup.create(queryParams), session);

@@ -124,6 +124,15 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <dependency>
+            <artifactId>geronimo-atinject_1.0_spec</artifactId>
+            <groupId>org.apache.geronimo.specs</groupId>
+        </dependency>
+        <!-- WCM Core Components -->
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.core</artifactId>
+        </dependency>
         <!-- ACS AEM Commons -->
         <dependency>
             <groupId>com.adobe.acs</groupId>

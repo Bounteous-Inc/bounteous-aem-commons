@@ -4,10 +4,10 @@
     <jcr:content
         cq:lastModified="{Date}2017-04-29T12:58:40.237-05:00"
         cq:lastModifiedBy="admin"
-        cq:template="/apps/multi-site-demo/hfl-peckers/templates/freeform"
+        cq:template="/apps/multi-site-demo/hfl-peckers/templates/freeformpage"
         jcr:primaryType="cq:PageContent"
         jcr:title="Style Guide"
-        sling:resourceType="multi-site-demo/hfl-core/components/page/freeform">
+        sling:resourceType="multi-site-demo/hfl-core/components/page/freeformpage">
         <schedule-tout
             jcr:lastModified="{Date}2017-03-27T23:26:08.052-05:00"
             jcr:lastModifiedBy="admin"

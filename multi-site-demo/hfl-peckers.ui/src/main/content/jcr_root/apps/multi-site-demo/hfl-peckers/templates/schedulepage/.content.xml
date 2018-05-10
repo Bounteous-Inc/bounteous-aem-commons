@@ -7,7 +7,7 @@
     ranking="{Long}4">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="multi-site-demo/hfl-core/components/page/schedule">
+        sling:resourceType="multi-site-demo/hfl-core/components/page/schedulepage">
         <schedule
             jcr:primaryType="nt:unstructured"
             sling:resourceType="multi-site-demo/hfl-core/components/content/schedule"/>

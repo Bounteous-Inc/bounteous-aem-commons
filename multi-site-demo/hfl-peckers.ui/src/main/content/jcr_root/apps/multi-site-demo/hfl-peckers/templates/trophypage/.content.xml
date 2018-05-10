@@ -7,5 +7,5 @@
     ranking="{Long}5">
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="multi-site-demo/hfl-core/components/page/trophy"/>
+        sling:resourceType="multi-site-demo/hfl-core/components/page/trophypage"/>
 </jcr:root>

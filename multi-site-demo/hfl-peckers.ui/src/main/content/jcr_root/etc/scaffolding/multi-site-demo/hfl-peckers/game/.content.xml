@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:targetPath="/content/multi-site-demo/hfl-peckers/en/data/games"
-        cq:targetTemplate="/apps/multi-site-demo/hfl-core/templates/data"
+        cq:targetTemplate="/apps/multi-site-demo/hfl-core/templates/datapage"
         jcr:description="Scheduled game for the Green Bay Peckers"
         jcr:primaryType="cq:PageContent"
         jcr:title="Scheduled Game"
