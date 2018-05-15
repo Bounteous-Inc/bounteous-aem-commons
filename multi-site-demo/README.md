@@ -4,6 +4,10 @@ This is a demo project used for "AEM IMMERSE 2017: Multi-Site Platforms - Settin
 The project demonstrates 15 coding principles for multi-site platforms.  See more details on the
 [Adobe community blog](http://blogs.adobe.com/contentmanagement/2017/04/24/aem-multi-site-tips-tricks-preview-immerse-2017).
 
+***NOTE: This code branch is out of date with current AEM coding best practices. For a more up-to-date version of this
+project, please see the master branch where the patterns discussed in the IMMERSE 2017 session on Multi-Site Platforms
+remain largely intact but using more up-to-date coding practices.***
+
 ## Contents
 
 - Code packages
