@@ -1,0 +1,11 @@
+<div class="cmp-header"
+     data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.header="com.hs2solutions.aem.hfl.core.models.Header"
+     data-sly-test.hasContent="${header.logoSrc && header.slogan}">
+
+    <a data-sly-test.logoSrc="${header.logoSrc}" class="logo" href="${header.homePageUrl}">
+        <img src="${logoSrc}" alt="Logo"/>
+    </a>
+    <p data-sly-test="${header.slogan}" class="slogan">${header.slogan}</p>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='author-msg'}"></sly>

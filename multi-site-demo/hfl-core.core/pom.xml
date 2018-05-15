@@ -40,8 +40,7 @@
                 <configuration>
                     <instructions>
                         <Include-Resource>
-                            {maven-resources},
-                            META-INF/multi-site-demo.tld=${project.build.outputDirectory}/META-INF/multi-site-demo.tld,
+                            {maven-resources}
                         </Include-Resource>
                         <Sling-Model-Packages>
                             com.hs2solutions.aem.hfl.core
@@ -137,11 +136,6 @@
         <dependency>
             <groupId>com.adobe.acs</groupId>
             <artifactId>acs-aem-commons-bundle</artifactId>
-        </dependency>
-        <!--  Build-time Dependencies -->
-        <dependency>
-            <groupId>com.google.code.tld-generator</groupId>
-            <artifactId>tld-generator</artifactId>
         </dependency>
     </dependencies>
 </project>

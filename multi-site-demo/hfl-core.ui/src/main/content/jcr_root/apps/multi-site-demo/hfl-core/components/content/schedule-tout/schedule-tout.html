@@ -6,4 +6,4 @@
     <h3>${scheduleTout.message}</h3>
     <a href="${scheduleTout.ctaUrl}">${scheduleTout.ctaLabel}</a>
 </div>
-<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent}"></sly>
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='author-msg'}"></sly>
