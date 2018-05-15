@@ -1,8 +1,13 @@
 # Multi-Site Demo
 
-This is a demo project used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
-The project demonstrates 15 coding principles for multi-site platforms.  See more details on the
-[Adobe community blog](http://blogs.adobe.com/contentmanagement/2017/04/24/aem-multi-site-tips-tricks-preview-immerse-2017).
+This is a demo project used for "AEM IMMERSE 2018: Shared Component Properties - Saying goodbye to the global configs page."
+The project demonstrates how to leverage Shared Component Properties on your site using latest coding patterns including
+sling model injection and [WCM Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components).
+
+This project was previously used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
+See details or pull the previous source code from the
+[immerse-2017-multi-site-tips-aem-6.2](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/immerse-2017-multi-site-tips-aem-6.2/multi-site-demo)
+branch.
 
 ## Contents
 
@@ -15,22 +20,23 @@ The project demonstrates 15 coding principles for multi-site platforms.  See mor
       content authors.
     - This content package is necessary to fully demo the coding principles w/o authoring the entire site contents
       on your own.
-- Adobe IMMERSE 2017 presentation deck
-    - A PowerPoint deck used to give the mentality and reasoning behind the 15 principles demonstrated by this project
-      along with a 16th principle supported by the
-      [On-Deploy Script Framework](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/master/on-deploy-scripts-framework)
-    - Download [immerse-multi-site-success.pptx](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/blob/master/multi-site-demo/releases/immerse-multi-site-success.pptx?raw=true)
+- Adobe IMMERSE 2018 presentation deck
+    - TBD...
 
 ## How to install
 
-NOTE: The current release code packages are built and tested against AEM 6.2. For alternate AEM versions you will need
-to build the code packages (all but `hfl-content-1.0.zip`) from sources, changing the dependencies as appropriate.
+NOTE: The current release code packages are built and tested against AEM 6.3 SP2. For later AEM versions you may need
+to build the code packages (all but `hfl-content-2.0.zip`) from sources, changing the dependencies as appropriate.
 
 1. Download the following packages from under the `releases` folder:
-    - (code) `hfl-core.ui-1.0.0-SNAPSHOT.zip` (contains embedded `acs-aem-commons-content-3.8.5-SNAPSHOT.zip`)
-    - (code) `hfl-boars.ui-1.0.0-SNAPSHOT.zip`
-    - (code) `hfl-peckers.ui-1.0.0-SNAPSHOT.zip`
-    - (content) `hfl-content-1.0.zip`
+    - (code) `hfl-core.ui-2.0.0-SNAPSHOT.zip`
+        - (embedded code) `acs-aem-commons-content-3.16.1-SNAPSHOT.zip`
+        - (embedded code) `core.wcm.components.all-2.0.6.zip`
+            - (embedded code) `core.wcm.components.content-2.0.6.zip`
+            - (embedded code) `core.wcm.components.config-2.0.6.zip`
+    - (code) `hfl-boars.ui-2.0.0-SNAPSHOT.zip`
+    - (code) `hfl-peckers.ui-2.0.0-SNAPSHOT.zip`
+    - (content) `hfl-content-2.0.zip`
 1. Upload the packages to an AEM server instance via CRX package manager and install in the order listed above.
 
 ## How to install from sources
@@ -46,4 +52,4 @@ into AEM with
     mvn clean install -PautoInstallPackagePublish
     
 Deploying the project with this method will deploy the "code" packages only.  You will still need to upload and install
-the content package (`hfl-content-1.0.zip`), which should be compatible with any AEM version, via CRX package manager.
+the content package (`hfl-content-2.0.zip`), which should be compatible with any AEM version, via CRX package manager.
