@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function() {
-        $(".schedule").each(function () {
+        $(".cmp-schedule").each(function () {
             var schedule = $(this);
 
             // Fetch the schedule data

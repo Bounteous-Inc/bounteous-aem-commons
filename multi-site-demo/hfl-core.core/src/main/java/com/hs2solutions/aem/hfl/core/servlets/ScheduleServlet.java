@@ -31,6 +31,11 @@ import java.util.Map;
 
 /**
  * Servlet for fetching a team's schedule.
+ *
+ * This servlet is meant to be demonstrative of the multi-site pattern
+ * of using resource types instead of hard-coded paths in order to allow
+ * a component to call a servlet with the context of the site it lives on,
+ * allowing content for that specific site and no others to be considered.
  */
 @SlingServlet(
         description = "HFL Servlet to fetch Scheduled Games for a team.",
@@ -38,8 +43,8 @@ import java.util.Map;
         methods = "GET",
         extensions = {"json"}
 )
-public class Schedule extends SlingSafeMethodsServlet {
-    private static Logger logger = LoggerFactory.getLogger(Schedule.class);
+public class ScheduleServlet extends SlingSafeMethodsServlet {
+    private static Logger logger = LoggerFactory.getLogger(ScheduleServlet.class);
 
     @Reference
     private PageRootProvider pageRootProvider;
