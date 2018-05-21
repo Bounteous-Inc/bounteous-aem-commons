@@ -12,7 +12,6 @@
                 components="[
                 ,/apps/multi-site-demo/hfl-core/components/content/image,
                 ,/apps/multi-site-demo/hfl-core/components/content/navigation,
-                ,/apps/multi-site-demo/hfl-core/components/content/reference,
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule,
                 ,/apps/multi-site-demo/hfl-core/components/content/schedule-tout,
                 ,/apps/multi-site-demo/hfl-core/components/content/text,
