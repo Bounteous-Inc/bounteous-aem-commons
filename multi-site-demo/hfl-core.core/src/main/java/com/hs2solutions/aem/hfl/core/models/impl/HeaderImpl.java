@@ -2,6 +2,7 @@ package com.hs2solutions.aem.hfl.core.models.impl;
 
 import com.adobe.acs.commons.models.injectors.annotation.SharedValueMapValue;
 import com.adobe.acs.commons.wcm.PageRootProvider;
+import com.adobe.acs.commons.wcm.properties.shared.SharedComponentProperties;
 import com.hs2solutions.aem.hfl.core.models.Header;
 import com.hs2solutions.aem.hfl.core.models.ScheduleTout;
 import org.apache.commons.lang3.StringUtils;
@@ -24,7 +25,8 @@ public class HeaderImpl implements Header {
     @OSGiService
     private PageRootProvider pageRootProvider;
 
-    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL,
+            type = SharedComponentProperties.ValueTypes.GLOBAL)
     private String logo;
 
     @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)

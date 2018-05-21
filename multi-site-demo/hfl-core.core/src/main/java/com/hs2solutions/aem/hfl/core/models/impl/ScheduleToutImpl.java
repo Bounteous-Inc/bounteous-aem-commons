@@ -1,6 +1,7 @@
 package com.hs2solutions.aem.hfl.core.models.impl;
 
 import com.adobe.acs.commons.models.injectors.annotation.SharedValueMapValue;
+import com.adobe.acs.commons.wcm.properties.shared.SharedComponentProperties;
 import com.adobe.cq.wcm.core.components.models.Page;
 import com.hs2solutions.aem.hfl.core.models.BasePage;
 import com.hs2solutions.aem.hfl.core.models.ScheduleTout;
@@ -23,7 +24,8 @@ import java.util.List;
         resourceType = "multi-site-demo/hfl-core/components/content/schedule-tout"
 )
 public class ScheduleToutImpl implements ScheduleTout {
-    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL,
+            type = SharedComponentProperties.ValueTypes.GLOBAL)
     private String logo;
 
     @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
@@ -32,7 +34,8 @@ public class ScheduleToutImpl implements ScheduleTout {
     @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
     private String ctaLabel;
 
-    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL)
+    @SharedValueMapValue(injectionStrategy = InjectionStrategy.OPTIONAL,
+            type = SharedComponentProperties.ValueTypes.SHARED)
     private String path;
 
     @Override
