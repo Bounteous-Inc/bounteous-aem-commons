@@ -5,6 +5,10 @@ work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
 
 ## Features
 
+### aem-devops-runbook-template
+This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
+been (unofficially) labeled by Adobe Managed Services as a "model runbook." 
+
 ### hotfix-msm-lockable-deep-properties
 This is a hotfix to address a
 [documented AEM OOTB limitation](https://docs.adobe.com/docs/en/aem/6-2/develop/extending/msm.html)
