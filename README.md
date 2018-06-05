@@ -1,6 +1,6 @@
 # hs2-aem-commons
 
-This project is a repository of individual AEM packages freely distributed by HS2 Solutions, Inc to help AEM developers
+This project is a repository of individual AEM packages freely distributed by HS2 Solutions to help AEM developers
 work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
 
 ## Features
@@ -13,7 +13,7 @@ to using the cq-msm-lockable attribute to disable inheritance when configuring M
 (cq:propertyInheritanceCancelled).
 
 ### multi-site-demo
-This is a demo project used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
+This is a demo project used for "Adobe IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
 The project demonstrates 15 coding principles for multi-site platforms.  See more details on the
 [Adobe community blog](http://blogs.adobe.com/contentmanagement/2017/04/24/aem-multi-site-tips-tricks-preview-immerse-2017).
 

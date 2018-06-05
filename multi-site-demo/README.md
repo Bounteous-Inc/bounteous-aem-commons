@@ -1,10 +1,10 @@
 # Multi-Site Demo
 
-This is a demo project used for "AEM IMMERSE 2018: Shared Component Properties - Saying goodbye to the global configs page."
+This is a demo project used for "Adobe IMMERSE 2018: Shared Component Properties - Saying goodbye to the global configs page."
 The project demonstrates how to leverage Shared Component Properties on your site using latest coding patterns including
 sling model injection and [WCM Core Components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components).
 
-This project was previously used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
+This project was previously used for "Adobe IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
 See details or pull the previous source code from the
 [immerse-2017-multi-site-tips-aem-6.2](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/immerse-2017-multi-site-tips-aem-6.2/multi-site-demo)
 branch.
