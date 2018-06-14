@@ -21,7 +21,7 @@ branch.
     - This content package is necessary to fully demo the coding principles w/o authoring the entire site contents
       on your own.
 - Adobe IMMERSE 2018 presentation deck
-    - TBD...
+    - Download [immerse-2018-hs2-solutions-shared-component-properties.pptx](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/master/multi-site-demo/releases/immerse-2018-hs2-solutions-shared-component-properties.pptx)
 
 ## How to install
 
