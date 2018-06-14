@@ -465,13 +465,13 @@
             <dependency>
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>acs-aem-commons-bundle</artifactId>
-                <version>3.16.1-SNAPSHOT</version>
+                <version>3.17.0</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>acs-aem-commons-content</artifactId>
-                <version>3.16.1-SNAPSHOT</version>
+                <version>3.17.0</version>
                 <type>content-package</type>
                 <classifier>min</classifier>
             </dependency>

@@ -30,7 +30,7 @@ to build the code packages (all but `hfl-content-2.0.zip`) from sources, changin
 
 1. Download the following packages from under the `releases` folder:
     - (code) `hfl-core.ui-2.0.0-SNAPSHOT.zip`
-        - (embedded code) `acs-aem-commons-content-3.16.1-SNAPSHOT.zip`
+        - (embedded code) `acs-aem-commons-content-3.17.0.zip`
         - (embedded code) `core.wcm.components.all-2.0.6.zip`
             - (embedded code) `core.wcm.components.content-2.0.6.zip`
             - (embedded code) `core.wcm.components.config-2.0.6.zip`
