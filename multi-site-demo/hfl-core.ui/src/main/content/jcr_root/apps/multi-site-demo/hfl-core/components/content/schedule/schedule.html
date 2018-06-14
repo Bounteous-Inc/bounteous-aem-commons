@@ -4,13 +4,13 @@
     <div data-sly-test="${schedule.allowFilter}">
         <div data-sly-test.filterCopySet="${schedule.copyFilterAll && schedule.copyFilterHome && schedule.copyFilterAway}" class="schedule-filter">
             <label>
-                <input type="radio" name="filter" value="all" checked/><span>${sharedProperties.copyFilterAll}</span>
+                <input type="radio" name="filter" value="all" checked/><span>${schedule.copyFilterAll}</span>
             </label>
             <label>
-                <input type="radio" name="filter" value="home"/><span>${sharedProperties.copyFilterHome}</span>
+                <input type="radio" name="filter" value="home"/><span>${schedule.copyFilterHome}</span>
             </label>
             <label>
-                <input type="radio" name="filter" value="away"/><span>${sharedProperties.copyFilterAway}</span>
+                <input type="radio" name="filter" value="away"/><span>${schedule.copyFilterAway}</span>
             </label>
         </div>
         <p data-sly-test="${!filterCopySet}" class="author-msg">
