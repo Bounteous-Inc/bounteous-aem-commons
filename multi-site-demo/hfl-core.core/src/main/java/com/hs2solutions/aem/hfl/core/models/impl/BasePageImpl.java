@@ -32,6 +32,9 @@ public class BasePageImpl implements BasePage {
     @ScriptVariable(injectionStrategy = InjectionStrategy.OPTIONAL)
     private Design currentDesign;
 
+    @ScriptVariable(injectionStrategy = InjectionStrategy.OPTIONAL)
+    private com.day.cq.wcm.api.Page currentPage;
+
     @Self
     @Via(type = ForcedResourceType.class, value = "core/wcm/components/page/v2/page")
     private Page superTypePage;
@@ -68,7 +71,7 @@ public class BasePageImpl implements BasePage {
 
     @Override
     public String getTitle() {
-        return superTypePage.getTitle();
+        return StringUtils.defaultIfBlank(currentPage.getPageTitle(), superTypePage.getTitle());
     }
 
     @Override
