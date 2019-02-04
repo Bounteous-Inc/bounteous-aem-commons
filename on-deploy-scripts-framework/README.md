@@ -1,6 +1,6 @@
-# On-Deploy Scripts Framework
+# On-Deploy Scripts Framework by Bounteous (previously HS2 Solutions)
 
-This is a framework developed by HS2 Solutions to allow developers to create and leverage one-time scripts that run
+This is a framework developed by Bounteous to allow developers to create and leverage one-time scripts that run
 on an AEM server upon deploy of a code bundle.
 
 This feature is now offically part of

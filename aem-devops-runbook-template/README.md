@@ -1,4 +1,4 @@
-# AEM Dev/Ops Runbook Template by HS2 Solutions
+# AEM Dev/Ops Runbook Template by Bounteous (previously HS2 Solutions)
 
 This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform.
 

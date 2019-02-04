@@ -1,4 +1,4 @@
-# Multi-Site Demo
+# Multi-Site and Shared Component Properties Demo by Bounteous (previously HS2 Solutions)
 
 This is a demo project used for "Adobe IMMERSE 2018: Shared Component Properties - Saying goodbye to the global configs page."
 The project demonstrates how to leverage Shared Component Properties on your site using latest coding patterns including

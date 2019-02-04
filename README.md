@@ -1,7 +1,7 @@
 # hs2-aem-commons
 
-This project is a repository of individual AEM packages freely distributed by HS2 Solutions to help AEM developers
-work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
+This project is a repository of individual AEM packages freely distributed by Bounteous (previously HS2 Solutions)
+to help AEM developers work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
 
 ## Features
 
