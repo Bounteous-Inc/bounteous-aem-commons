@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- |  Copyright 2016 HS2 Solutions
+ |  Copyright 2016 Bounteous
  |
  |  Licensed under the Apache License, Version 2.0 (the "License");
  |  you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@
     <artifactId>hfl-core.core</artifactId>
     <packaging>bundle</packaging>
     <name>multi-site-demo - HFL Core Bundle</name>
-    <description>Core bundle for "HS2 Football League" multi-site demo. Authored by HS2 Solutions (Brett Birschbach) for Adobe IMMERSE 2017.</description>
+    <description>Core bundle for "HS2 Football League" multi-site demo. Authored by Bounteous (Brett Birschbach) for Adobe IMMERSE 2017.</description>
     <build>
         <plugins>
             <plugin>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- |  Copyright 2016 HS2 Solutions
+ |  Copyright 2016 Bounteous
  |
  |  Licensed under the Apache License, Version 2.0 (the "License");
  |  you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
     <artifactId>base</artifactId>
     <packaging>pom</packaging>
     <version>2.0.0-SNAPSHOT</version>
-    <description>Demo project to illustrate techniques for multi-site solutions. Authored by HS2 Solutions (Brett Birschbach) for Adobe IMMERSE 2017.</description>
+    <description>Demo project to illustrate techniques for multi-site solutions. Authored by Bounteous (Brett Birschbach) for Adobe IMMERSE 2017.</description>
 
     <modules>
         <module>hfl-core.core</module>
@@ -163,7 +163,7 @@
                             <configuration>
                                 <!-- Private service properties for all services. -->
                                 <properties>
-                                    <service.vendor>HS2 Solutions</service.vendor>
+                                    <service.vendor>Bounteous</service.vendor>
                                 </properties>
                             </configuration>
                         </execution>

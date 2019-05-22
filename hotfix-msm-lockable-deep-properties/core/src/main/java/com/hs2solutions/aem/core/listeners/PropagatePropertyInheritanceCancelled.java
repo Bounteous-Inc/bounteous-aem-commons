@@ -35,7 +35,7 @@ import java.util.Set;
  * the appropriate child node so that breaking inheritance will work
  * on those properties.
  *
- * @author HS2 Solutions
+ * @author Bounteous
  */
 @Component(immediate = true)
 @Service
