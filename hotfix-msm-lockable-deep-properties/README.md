@@ -1,4 +1,4 @@
-# HS2 Solutions Hotfix for MSM Inheritance Breaking for Deep Properties
+# Hotfix for MSM Inheritance Breaking for Deep Properties by Bounteous (previously HS2 Solutions)
 
 This is a hotfix to address a
 [documented AEM OOTB limitation](https://docs.adobe.com/docs/en/aem/6-2/develop/extending/msm.html)

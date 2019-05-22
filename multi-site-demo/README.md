@@ -22,8 +22,8 @@ remain largely intact but using more up-to-date coding practices.***
 - Adobe IMMERSE 2017 presentation deck
     - A PowerPoint deck used to give the mentality and reasoning behind the 15 principles demonstrated by this project
       along with a 16th principle supported by the
-      [On-Deploy Script Framework](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/tree/master/on-deploy-scripts-framework)
-    - Download [immerse-multi-site-success.pptx](https://github.com/HS2-SOLUTIONS/hs2-aem-commons/blob/master/multi-site-demo/releases/immerse-multi-site-success.pptx?raw=true)
+      [On-Deploy Script Framework](https://github.com/Bounteous-Inc/bounteous-aem-commons/tree/master/on-deploy-scripts-framework)
+    - Download [immerse-multi-site-success.pptx](https://github.com/Bounteous-Inc/bounteous-aem-commons/blob/master/multi-site-demo/releases/immerse-multi-site-success.pptx?raw=true)
 
 ## How to install
 

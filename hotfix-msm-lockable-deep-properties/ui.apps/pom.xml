@@ -2,7 +2,7 @@
 <!--
  |  The MIT License (MIT)
  |
- |  Copyright (c) 2016 HS2 Solutions, Inc.
+ |  Copyright (c) 2016 Bounteous.
  |
  |  Permission is hereby granted, free of charge, to any person obtaining a copy
  |  of this software and associated documentation files (the "Software"), to deal
@@ -40,8 +40,8 @@
     <!-- ====================================================================== -->
     <artifactId>hotfix-msm-lockable-deep-properties.ui.apps</artifactId>
     <packaging>content-package</packaging>
-    <name>HS2 Solutions Hotfix for MSM Inheritance Breaking for Deep Properties - UI apps</name>
-    <description>HS2 Solutions Hotfix for MSM Inheritance Breaking for Deep Properties</description>
+    <name>Bounteous Hotfix for MSM Inheritance Breaking for Deep Properties - UI apps</name>
+    <description>Bounteous Hotfix for MSM Inheritance Breaking for Deep Properties</description>
 
     <!-- <scm>
         <connection></connection>

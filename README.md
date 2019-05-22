@@ -1,9 +1,13 @@
-# hs2-aem-commons
+# bounteous-aem-commons
 
-This project is a repository of individual AEM packages freely distributed by HS2 Solutions, Inc to help AEM developers
-work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
+This project is a repository of individual AEM packages freely distributed by Bounteous (previously HS2 Solutions)
+to help AEM developers work around bugs, implement new features, and otherwise just "Get Sh*t Done!"
 
 ## Features
+
+### aem-devops-runbook-template
+This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
+been (unofficially) labeled by Adobe Managed Services as a "model runbook." 
 
 ### hotfix-msm-lockable-deep-properties
 This is a hotfix to address a
@@ -13,7 +17,7 @@ to using the cq-msm-lockable attribute to disable inheritance when configuring M
 (cq:propertyInheritanceCancelled).
 
 ### multi-site-demo
-This is a demo project used for "AEM IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
+This is a demo project used for "Adobe IMMERSE 2017: Multi-Site Platforms - Setting your Codebase Up for Success."
 The project demonstrates 15 coding principles for multi-site platforms.  See more details on the
 [Adobe community blog](http://blogs.adobe.com/contentmanagement/2017/04/24/aem-multi-site-tips-tricks-preview-immerse-2017).
 
