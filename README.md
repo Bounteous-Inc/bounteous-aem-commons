@@ -5,6 +5,12 @@ to help AEM developers work around bugs, implement new features, and otherwise j
 
 ## Features
 
+### aem-component-generator
+This is a code generator that enables developers to automatically create the base structure of an
+AEM component using a JSON configuration file, streamlining implementation for all developers and enabling
+frontend developers to create components according to WCM Core standards (including Sling Models) without
+the need to code any java. 
+
 ### aem-devops-runbook-template
 This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
 been (unofficially) labeled by Adobe Managed Services as a "model runbook." 
