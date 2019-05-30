@@ -147,9 +147,6 @@ public class ComponentUtils {
             CommonUtils.createFileWithCopyRight(generationConfig.getCompDir() +
                     "/" + generationConfig.getName() + ".html",
                     templateValueMap);
-
-            LOG.info("Created : " + generationConfig.getCompDir() +
-                    "/" + generationConfig.getName() + ".html");
         } catch (Exception e) {
             throw new GeneratorException("Exception while creating HTML : " + generationConfig.getCompDir());
         }

@@ -140,6 +140,8 @@ public class CommonUtils {
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
             writer.write(strSubstitutor.replace(templateString));
             writer.close();
+
+            LOG.info("Created : " + path);
         }
     }
 
