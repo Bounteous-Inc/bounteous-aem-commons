@@ -19,7 +19,7 @@
  */
 package com.bounteous.aem.compgenerator.javacodemodel;
 
-import com.adobe.acs.commons.models.injectors.annotation.ChildRequest;
+import com.adobe.acs.commons.models.injectors.annotation.ChildResourceFromRequest;
 import com.adobe.acs.commons.models.injectors.annotation.SharedValueMapValue;
 import com.bounteous.aem.compgenerator.Constants;
 import com.bounteous.aem.compgenerator.models.GenerationConfig;
@@ -224,7 +224,7 @@ public class JavaCodeModel {
             JFieldVar jFieldVar = jc.field(PRIVATE, fieldClass, property.getField());
 
             if (StringUtils.equalsIgnoreCase(property.getType(), "image")) {
-                jFieldVar.annotate(codeModel.ref(ChildRequest.class))
+                jFieldVar.annotate(codeModel.ref(ChildResourceFromRequest.class))
                         .param(INJECTION_STRATEGY,
                                 codeModel.ref(InjectionStrategy.class).staticRef(OPTIONAL_INJECTION_STRATEGY));
 
@@ -250,7 +250,7 @@ public class JavaCodeModel {
             String fieldType = getFieldType(property);
             JClass fieldClass = codeModel.ref(fieldType).narrow(codeModel.ref(Resource.class));
             JFieldVar jFieldVar = jc.field(PRIVATE, fieldClass, property.getField());
-            jFieldVar.annotate(codeModel.ref(ChildRequest.class))
+            jFieldVar.annotate(codeModel.ref(ChildResourceFromRequest.class))
                     .param(INJECTION_STRATEGY,
                             codeModel.ref(InjectionStrategy.class).staticRef(OPTIONAL_INJECTION_STRATEGY));
         }
