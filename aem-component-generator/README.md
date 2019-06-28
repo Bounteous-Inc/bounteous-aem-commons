@@ -17,5 +17,5 @@ Generated code includes:
     - Includes the default WCM Core placeholder template for when the component is not yet configured
 - Stubbed clientlib (JS/CSS) following component client library patterns of WCM Core 
 
-This project has been contributed to the Adobe Open Source community -
-<https://github.com/adobe/aem-component-generator>
+This feature is now officially part of
+[Adobe Open Source](<https://github.com/adobe/aem-component-generator>).

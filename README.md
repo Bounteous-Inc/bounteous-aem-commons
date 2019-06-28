@@ -11,6 +11,9 @@ AEM component using a JSON configuration file, streamlining implementation for a
 frontend developers to create components according to WCM Core standards (including Sling Models) without
 the need to code any java. 
 
+This feature is now officially part of
+[Adobe Open Source](<https://github.com/adobe/aem-component-generator>).
+
 ### aem-devops-runbook-template
 This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
 been (unofficially) labeled by Adobe Managed Services as a "model runbook." 
