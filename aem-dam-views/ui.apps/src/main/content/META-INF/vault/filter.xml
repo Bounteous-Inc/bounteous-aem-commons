@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/dam-views"/>
+    <filter root="/apps/dam/gui"/>
+    <filter root="/apps/cq/core"/>
+    <filter root="/apps/wcm/core/content/sites" />
+</workspaceFilter>

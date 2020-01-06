@@ -14,6 +14,10 @@ the need to code any java.
 This feature is now officially part of
 [Adobe Open Source](<https://github.com/adobe/aem-component-generator>).
 
+### aem-dam-views
+This is a feature that allows configuration of unlimited DAM folder navigation structures as a set of "views" on top
+of the single true asset folder structure, catering to different business users and use cases.
+
 ### aem-devops-runbook-template
 This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
 been (unofficially) labeled by Adobe Managed Services as a "model runbook." 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <assets jcr:primaryType="nt:unstructured">
+        <damviews
+            jcr:description="DAM Views"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="DAM Views"
+            href="/mnt/overlay/dam/gui/content/damviews.html/content/dam-views"
+            icon="viewCard"
+            id="cq-assets-dam-views"/>
+    </assets>
+</jcr:root>

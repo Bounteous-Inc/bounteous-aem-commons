@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Assets | Catalog - Create Similar Pages"
+        sling:resourceType="granite/ui/components/coral/foundation/page">
+        <head jcr:primaryType="nt:unstructured">
+            <viewport
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/admin/page/viewport"/>
+            <favicon
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/page/favicon"/>
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[coralui3,granite.ui.coral.foundation,cq.gui.print-templates.addmultipledocuments.coral]"/>
+        </head>
+        <body
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/page/body">
+            <items jcr:primaryType="nt:unstructured">
+                <form
+                    granite:class="cq-print-admin-createdocument"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form"
+                    maximized="{Boolean}true"
+                    method="post"
+                    novalidate="{Boolean}false"
+                    style="vertical">
+                    <items jcr:primaryType="nt:unstructured">
+                        <wizard
+                            granite:rel="dam-idsprint-addmultiple"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Create Similar Pages"
+                            sling:resourceType="granite/ui/components/coral/foundation/wizard"
+                            cancelHref="${empty header.Referer ? granite:concat(&quot;/mnt/overlay/dam/gui/content/idsprint/catalogs.html&quot;, granite:encodeURIPath(requestPathInfo.suffix)) : header.Referer}">
+                            <items jcr:primaryType="nt:unstructured">
+                                <selectcontentpage
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Create Similar Pages"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    maximized="{Boolean}true">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        foundation-validation-ui="none"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <default
+                                            granite:class="betty-ActionBar"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/actionbar">
+                                            <primary jcr:primaryType="nt:unstructured">
+                                                <add
+                                                    granite:class="foundation-collection-action foundation-picker-control"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/button"
+                                                    icon="add"
+                                                    text="Add Product"
+                                                    title="Add Product"
+                                                    variant="actionBar">
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        foundation-collection-action="\{&quot;target&quot;:&quot;.cq-commerce-products-admin-childpages&quot;,&quot;activeSelectionCount&quot;:&quot;none&quot;,&quot;relScope&quot;:&quot;collection&quot;}"
+                                                        foundation-picker-control-action="\{&quot;name&quot;:&quot;cq.damadmin.idsprint.addproduct&quot;,&quot;data&quot;:{}}"
+                                                        foundation-picker-control-src="/mnt/overlay/commerce/gui/content/common/productfield/picker.html?selectionCount=multiple"/>
+                                                </add>
+                                                <delete
+                                                    granite:class="cq-damadmin-idsprint-add-multiple-removeselection"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/button"
+                                                    icon="delete"
+                                                    text="Delete"
+                                                    title="Delete"
+                                                    variant="actionBar"/>
+                                            </primary>
+                                            <secondary jcr:primaryType="nt:unstructured"/>
+                                        </default>
+                                        <list
+                                            granite:rel="cq-damadmin-idsprint-product-content-pages"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/table"
+                                            layoutId="table"
+                                            modeGroup="cq-commerce-products-admin-childpages"
+                                            selectionCount="multiple"
+                                            selectionMode="row">
+                                            <columns jcr:primaryType="nt:unstructured">
+                                                <select
+                                                    granite:class="cq-damadmin-idsprint-product-select"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    select="{Boolean}true"/>
+                                                <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Title"
+                                                    class="header-item-product-title"
+                                                    sortable="{Boolean}true"/>
+                                                <path
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Path"
+                                                    name="column-path"
+                                                    sortable="{Boolean}true"/>
+                                            </columns>
+                                        </list>
+                                    </items>
+                                    <parentConfig jcr:primaryType="nt:unstructured">
+                                        <next
+                                            granite:class="foundation-wizard-control"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            disabled="{Boolean}true"
+                                            text="Create"
+                                            type="submit"
+                                            variant="primary">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="next"/>
+                                        </next>
+                                    </parentConfig>
+                                </selectcontentpage>
+                            </items>
+                        </wizard>
+                    </items>
+                </form>
+            </items>
+        </body>
+    </jcr:content>
+</jcr:root>

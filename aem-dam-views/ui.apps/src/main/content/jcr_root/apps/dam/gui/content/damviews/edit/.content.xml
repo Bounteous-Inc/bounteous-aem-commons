@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Assets | Preview Catalog"
+        sling:resourceType="granite/ui/components/coral/foundation/page">
+        <head jcr:primaryType="nt:unstructured">
+            <viewport
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/admin/page/viewport"/>
+            <favicon
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/page/favicon"/>
+            <meta
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/meta"
+                content="chrome=1"
+                name="X-UA-Compatible"/>
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[jquery,jquery-ui,coralui3,granite.ui.coral.foundation,granite.ui.shell,dam.gui.idsprint.editcatalog.coral,dam.gui.coral.backhref,dam.gui.admin.util.coral]"/>
+        </head>
+        <body
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/page/body">
+            <items jcr:primaryType="nt:unstructured">
+                <form
+                    granite:class="cq-print-admin-catalog-edit"
+                    granite:id="catalog-edit-form"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    class="foundation-form content-container"
+                    foundationForm="{Boolean}true"
+                    maximized="{Boolean}true"
+                    method="post"
+                    style="vertical">
+                    <items jcr:primaryType="nt:unstructured">
+                        <wizard
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Preview Catalog"
+                            sling:resourceType="granite/ui/components/coral/foundation/wizard">
+                            <items jcr:primaryType="nt:unstructured">
+                                <templateStep
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <actionbar
+                                            granite:class="editcatalog-action-bar"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="dam/gui/coral/components/commons/bettyactionbar"
+                                            title="Page">
+                                            <primary jcr:primaryType="nt:unstructured"/>
+                                            <secondary jcr:primaryType="nt:unstructured"/>
+                                            <title
+                                                granite:class="editcatalog-action-bar-title"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/text"
+                                                text="Page"/>
+                                        </actionbar>
+                                        <side-panel
+                                            granite:class="js-SidePanel-content"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured"/>
+                                        </side-panel>
+                                        <edit-content
+                                            granite:class="catalog-edit-content"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <preview
+                                                    granite:class="editcatalog-preview"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <preview-image
+                                                            granite:class="preview-controls"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="dam/gui/coral/components/admin/idsprint/catalogdetail"
+                                                            path="${granite:encodeURIPath(requestPathInfo.suffix)}"
+                                                            width="{Long}1280"/>
+                                                    </items>
+                                                </preview>
+                                                <editables-container
+                                                    granite:class="editcatalog-editable-container"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured"/>
+                                                </editables-container>
+                                            </items>
+                                        </edit-content>
+                                    </items>
+                                    <parentConfig jcr:primaryType="nt:unstructured">
+                                        <prev
+                                            granite:class="foundation-wizard-control"
+                                            granite:hidden="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/anchorbutton"
+                                            text="Cancel">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="cancel"/>
+                                        </prev>
+                                        <next
+                                            granite:class="foundation-wizard-control"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/anchorbutton"
+                                            href="/mnt/overlay/dam/gui/content/damviews.html/content/dam-views"
+                                            text="Close"
+                                            variant="secondary">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="cancel"/>
+                                        </next>
+                                    </parentConfig>
+                                </templateStep>
+                            </items>
+                        </wizard>
+                    </items>
+                </form>
+            </items>
+        </body>
+    </jcr:content>
+</jcr:root>

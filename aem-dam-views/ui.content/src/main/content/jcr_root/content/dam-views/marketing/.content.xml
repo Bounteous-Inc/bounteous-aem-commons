@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"  xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          jcr:primaryType="cq:Page">
+    <jcr:content jcr:primaryType="cq:PageContent" sling:resourceType="dam-views/components/structure/page"
+        jcr:title="Marketing" cq:template="/conf/dam-views/settings/wcm/templates/folder-page">
+        <damconfigviews jcr:primaryType="nt:unstructured">
+            <item0 jcr:primaryType="nt:unstructured" tags="[we-retail:activity]"
+                   groupType="tag" resultType="folders" />
+            <item1 jcr:primaryType="nt:unstructured" years="{Long}10"
+                   groupType="year" resultType="folders" />
+            <item2 jcr:primaryType="nt:unstructured"
+                   groupType="month" resultType="folders" />
+            <item3 jcr:primaryType="nt:unstructured"
+                   resultType="asset" />
+        </damconfigviews>
+    </jcr:content>
+</jcr:root>

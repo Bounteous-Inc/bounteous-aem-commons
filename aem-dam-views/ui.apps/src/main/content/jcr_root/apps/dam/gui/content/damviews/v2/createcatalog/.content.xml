@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Assets | Create Catalog"
+        sling:resourceType="granite/ui/components/coral/foundation/page">
+        <head jcr:primaryType="nt:unstructured">
+            <viewport
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/admin/page/viewport"/>
+            <favicon
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/page/favicon"/>
+            <meta
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/meta"
+                content="chrome=1"
+                name="X-UA-Compatible"/>
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[coralui3,granite.ui.coral.foundation,dam.gui.idsprint.createcatalog.coral.v2]"/>
+        </head>
+        <body
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/page/body">
+            <items jcr:primaryType="nt:unstructured">
+                <form
+                    granite:class="damadmin-idsprint-createcatalog"
+                    granite:id="idsprint-createcatalog-form"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form"
+                    action="${requestPathInfo.suffix}"
+                    enctype="application/x-www-form-urlencoded"
+                    maximized="{Boolean}true"
+                    method="post"
+                    novalidate="{Boolean}false"
+                    style="vertical">
+                    <items jcr:primaryType="nt:unstructured">
+                        <wizard
+                            granite:class="idsprint-catalog-details"
+                            granite:id="idsprint-create-catalog-wizard"
+                            granite:rel="idsprint-create-catalog-details"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Create Catalog"
+                            sling:resourceType="granite/ui/components/coral/foundation/wizard"
+                            cancelHref="${empty header.Referer ? granite:concat(&quot;/mnt/overlay/dam/gui/content/idsprint/catalogs.html&quot;, granite:encodeURIPath(empty param.item ? requestPathInfo.suffix : param.item)) : header.Referer}">
+                            <items jcr:primaryType="nt:unstructured">
+                                <settingStep
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Catalog Details"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <fixedColumns
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                            active="{Boolean}true"
+                                            margin="{Boolean}true"
+                                            maximized="{Boolean}false">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <fixedColumn1
+                                                    granite:id="folder-thumbnail"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <thumbnail
+                                                            granite:class="share-resource-image grid"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="dam/gui/coral/components/commons/thumbnail"
+                                                            context="ASSET"
+                                                            thumbnailUrl="/libs/cq/ui/widgets/themes/default/icons/240x180/page.png"
+                                                            variant="asset">
+                                                            <actions jcr:primaryType="nt:unstructured">
+                                                                <upload
+                                                                    granite:id="thumbnail-upload-button"
+                                                                    granite:rel="thumbnail-upload-action"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                                                                    autoStart="{Boolean}false"
+                                                                    mimeTypes="[image/png,image/jpeg,image/gif]"
+                                                                    multiple="{Boolean}false"
+                                                                    name="coverImage"
+                                                                    renderReadOnly="{Boolean}true"
+                                                                    sizeLimit="100000000"
+                                                                    text="Add Thumbnail"
+                                                                    uploadUrl="will_be_replaced"
+                                                                    useHTML5="{Boolean}false">
+                                                                    <granite:data
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        ignoreField="{Boolean}true"/>
+                                                                </upload>
+                                                            </actions>
+                                                        </thumbnail>
+                                                    </items>
+                                                </fixedColumn1>
+                                                <fixedColumn2
+                                                    granite:id="detail"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <brochurename
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Catalog Name"
+                                                            name="name"
+                                                            required="true"/>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            fieldLabel="Description"
+                                                            name="dc:description"
+                                                            required="false"
+                                                            rows="{Long}6"/>
+                                                        <tags
+                                                            cq:showOnCreate="{Boolean}true"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                            fieldLabel="Tags"
+                                                            metaType="tags"
+                                                            multiple="{Boolean}true"
+                                                            name="./jcr:content/metadata/cq:tags"/>
+                                                    </items>
+                                                </fixedColumn2>
+                                            </items>
+                                        </fixedColumns>
+                                    </items>
+                                    <parentConfig
+                                        jcr:primaryType="nt:unstructured"
+                                        validation="{Boolean}false">
+                                        <next
+                                            granite:class="foundation-wizard-control"
+                                            granite:rel="idsprint-createcatalog-form-submit"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            disabled="{Boolean}true"
+                                            text="Save"
+                                            type="submit"
+                                            variant="primary">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="next"/>
+                                        </next>
+                                    </parentConfig>
+                                </settingStep>
+                            </items>
+                        </wizard>
+                    </items>
+                </form>
+            </items>
+        </body>
+    </jcr:content>
+</jcr:root>
