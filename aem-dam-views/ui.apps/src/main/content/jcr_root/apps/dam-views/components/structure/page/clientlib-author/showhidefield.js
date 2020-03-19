@@ -12,9 +12,9 @@
 
     function showHide(el) {
         var isInMultifield = el.data('inmultifield');
-        var parent = el.closest('coral-multifield-item-content');
+        var parent = el.closest('coral-multifield-item');
         var target = el.data('aem-dialog-dropdown-showhide-target');
-        var value = el.find('coral-select-item[selected]').val();
+        var value = el.find('coral-select-item[selected]').attr('value');
         if (isInMultifield) {
             $(parent).find(target).not(".hide").addClass("hide");
             $(parent).find(target + "[data-aem-showhidetargetvalue='" + value + "']").removeClass("hide");
