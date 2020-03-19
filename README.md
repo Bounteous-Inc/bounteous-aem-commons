@@ -18,6 +18,8 @@ This feature is now officially part of
 This is a feature that allows configuration of unlimited DAM folder navigation structures as a set of "views" on top
 of the single true asset folder structure, catering to different business users and use cases.
 
+The version hosted here is a demo-level feature for developers only, and is not production ready.
+
 ### aem-devops-runbook-template
 This is a template to aid in creation of a Dev/Ops Runbook for an AEM platform. A runbook following this template has
 been (unofficially) labeled by Adobe Managed Services as a "model runbook." 

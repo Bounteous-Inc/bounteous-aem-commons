@@ -2,6 +2,8 @@
 
 ***NOTE: THIS PROJECT IS A WORK IN PROGRESS***
 
+*The version hosted here is a demo-level feature for developers only, and is not production ready.*
+
 AEM DAM Views severs the coupling of asset storage and asset navigation allowing the DAM structure to satisfy all users
 and use cases.  The marketer can naturally navigate through asset directories organized by campaign, the sales person
 by solution, and the photographer by date, all supported by a single normal DAM structure predicated on user access
