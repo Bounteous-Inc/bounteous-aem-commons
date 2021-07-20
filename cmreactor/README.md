@@ -20,18 +20,18 @@ will continue to work in Cloud Manager.
 
 ## Installation and Setup
 
-#. Copy `cmreactor.sh` into the root directory of any git project you are
+1. Copy `cmreactor.sh` into the root directory of any git project you are
 deploying to Adobe Cloud Manager.
 
-#. Ensure the file is executable by running `chmod +x cmreactor.sh`.
+2. Ensure the file is executable by running `chmod +x cmreactor.sh`.
 
-#. Run `./cmreactor.sh --config-template > cmreactor.gitconfig` to create
+3. Run `./cmreactor.sh --config-template > cmreactor.gitconfig` to create
 a template cmreactor configuration.
 
-#. If your push remote name is something other than `adobe`, run 
+4. If your push remote name is something other than `adobe`, run 
 `git config -f cmreactor.gitconfig cmreactor.pushremote <myCMremote>`.
 
-#. Run `./cmreactor.sh --file cmreactor.gitconfig` to push your first `cmreactor/*` branch,
+5. Run `./cmreactor.sh --file cmreactor.gitconfig` to push your first `cmreactor/*` branch,
 which should then be available for selecting in a Cloud Manager Pipeline.
 
 ## Usage
