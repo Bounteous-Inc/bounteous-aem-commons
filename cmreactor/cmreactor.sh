@@ -437,12 +437,16 @@ if [[ "${moduleNames[*]}" != "" ]]; then
     tempBase="$(pathInSource target/cmreactor-tmp)"
     mkdir -p "${tempBase}"
     for moduleName in "${moduleNames[@]}"; do
+        if [[ "${moduleName}" =~ [^A-Za-z0-9_.-] ]]; then
+            echo "Illegal module name ${moduleName}. Only characters matching [A-Za-z0-9_.-] are allowed." >&2
+            exit 1
+        fi
         moduleType="$(readModuleConfigValue "${configFile}" "${moduleName}" "type")"
         case "$moduleType" in
         zip)    handleZipModule "${configFile}" "${moduleName}" "${tempBase}";;
         git)    handleGitModule "${configFile}" "${moduleName}" "${tempBase}";;
         *)      echo "Unsupported module type $moduleType for module $moduleName" >&2
-                continue;;
+                exit 1;;
         esac
         rm -rf "$(pathInProject "${moduleName}/.git")"
     done
