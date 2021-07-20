@@ -12,7 +12,19 @@ The default cmreactor config template starts with a `base` module that reference
 repository where you are running `cmreactor.sh` (via `cmreactor.modules.base.url = .`), along
 with an `event-proxy` module that pulls in a release zip file from [Adobe I/O Event Proxy](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/aem/aem_skyline_install.md) to demonstrate the flexibility of the script.
 
-The script will `rsync` the `maven_repository` folder in any module into the
+    [cmreactor]
+	    pushremote = adobe
+	    pushprefix = cmreactor/
+	    modules = base
+	    modules = event-proxy
+    [cmreactor "module.base"]
+	    type = git
+	    url = .
+    [cmreactor "module.event-proxy"]
+	    type = zip
+	    url = https://github.com/AdobeDocs/adobeio-events/releases/download/2020_07_20_13_00/aem-event-proxy-skyline-6.6.105.zip
+
+The script will also `rsync` the `maven_repository` folder in any module into the
 new reactor root directory, merging the contents of the folder with those
 found in other modules, so that maven profile references to `file://${maven.multiModuleProjectDirectory}/maven_repository` 
 will continue to work in Cloud Manager.
