@@ -21,14 +21,16 @@
 # SOFTWARE.
 #
 set -eo pipefail
+# shellcheck disable=SC2155
 readonly execPath="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 if ! git -C "${execPath}" status >/dev/null 2>&1; then
     echo "$(basename "${BASH_SOURCE[0]}") must be located in a git repo before it can be executed." >&2
     exit 1
 fi
+# shellcheck disable=SC2155
 readonly srcPath="$( git -C "${execPath}" rev-parse --show-toplevel )"
+# shellcheck disable=SC2155
 readonly projectPath="${srcPath}/target/cmreactor-project"
-export LC_ALL=C
 
 ### BEGIN FUNCTIONS ###
 
@@ -312,7 +314,7 @@ handleZipModule() {
     local extractedDir
     local firstPomParentDir
     local modulePath
-    local metaPath
+    local metaFile
     local hash
 
     config="$1"
@@ -428,6 +430,7 @@ fi
 mkdir -p "${projectPath}"
 
 declare -a moduleNames
+# shellcheck disable=SC2207
 moduleNames=($(readModulesFromConfig "${configFile}"))
 
 reactorPomInit "${moduleNames[@]}"
@@ -437,8 +440,8 @@ if [[ "${moduleNames[*]}" != "" ]]; then
     tempBase="$(pathInSource target/cmreactor-tmp)"
     mkdir -p "${tempBase}"
     for moduleName in "${moduleNames[@]}"; do
-        if [[ "${moduleName}" =~ [^A-Za-z0-9_.-] ]]; then
-            echo "Illegal module name ${moduleName}. Only characters matching [A-Za-z0-9_.-] are allowed." >&2
+        if [[ "${moduleName}" =~ [^A-Za-z0-9_-] ]]; then
+            echo "Illegal module name ${moduleName}. Only characters matching [A-Za-z0-9_-] are allowed." >&2
             exit 1
         fi
         moduleType="$(readModuleConfigValue "${configFile}" "${moduleName}" "type")"
@@ -463,6 +466,7 @@ cp -f "${configFile}" "$(pathInProject cmreactor.gitconfig)"
 gitp init --initial-branch="${pushPrefix}${pushBranch}"
 
 declare -a gitConfigs
+# shellcheck disable=SC2207
 gitConfigs=($(readGitConfigSyncElements "${configFile}"))
 for gitConfig in "${gitConfigs[@]}"; do
     gitp config "${gitConfig}" "$(gitc config "${gitConfig}")"
