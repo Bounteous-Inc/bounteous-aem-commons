@@ -43,3 +43,8 @@ time saver for your AEM team!
 
 This feature is now offically part of
 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/on-deploy-scripts/index.html).
+
+### cmreactor
+A standalone, portable bash script to merge multiple AEM Cloud Service project sources 
+into a single-commit git branch with a generated reactor pom.xml file and to force-push to a
+Cloud Manager remote git repository.
