@@ -33,6 +33,9 @@ readonly srcPath="$( git -C "${execPath}" rev-parse --show-toplevel )"
 readonly projectPath="${srcPath}/target/cmreactor-project"
 
 ### BEGIN FUNCTIONS ###
+argrealpath() {
+    [[ "$1" = /* ]] && echo "$1" || echo "${PWD}/${1#./}"
+}
 
 template() {
 cat <<EOT
@@ -131,7 +134,7 @@ while [[ $# -gt 0 ]]; do
     -h|--help)                usage; exit;;
     -t|--config-template)     template; exit;;
     --no-push)                noPush=true;;
-    -f|--file)                configFile="$1"; shift;;
+    -f|--file)                configFile="$(argrealpath "$1")"; shift;;
     -x|--debug)               set -x;;
     *)                        echo "unknown option $opt" >&2; usage; exit 1;;
   esac
