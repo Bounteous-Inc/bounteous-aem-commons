@@ -64,7 +64,7 @@ Cloud Manager remote git repository.
   -f | --file <file>      read cmreactor config options from <file>
   -b | --branch <branch>  the base name for the reactor branch in the new repo
   -r | --remote-url <url> override the push remote url
-  -t | --config-template  print the cmreactor config template JSON and exit
+  -t | --config-template  print the cmreactor config template and exit
      | --no-push          skip the actual push step
   -x | --debug            debug script execution
   -h | --help             print this help message and exit
@@ -141,7 +141,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ "$configFile" == "" ]] || [[ ! -f "${configFile}" ]]; then
-    echo "Please specify a json config file with -f / --file" >&2
+    echo "Please specify a cmreactor config file with -f / --file" >&2
     usage
     exit 1
 fi
