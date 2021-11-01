@@ -418,9 +418,14 @@ recordReactorGitMeta() {
     gitp config -f "${metaFile}" "cmreactor.reactor-meta.oneline" "$(gitc show -s --oneline)"
 }
 
-syncMavenRepositoryFolders() {
-    find "${projectPath}" -name maven_repository -type d -mindepth 2 \
-        -exec rsync -a '{}'/ "${projectPath}/maven_repository/" \;
+syncTopLevelFolders() {
+    local folderName
+    folderName="$1"
+
+    if [[ "${folderName}" != "" ]]; then
+        find "${projectPath}" -name "${folderName}" -type d -mindepth 2 \
+            -exec rsync -a '{}'/ "${projectPath}/${folderName}/" \;
+    fi
 }
 ### END CMREACTOR FUNCTIONS ###
 
@@ -458,7 +463,8 @@ if [[ "${moduleNames[*]}" != "" ]]; then
     done
 fi
 
-syncMavenRepositoryFolders
+syncTopLevelFolders maven_repository
+syncTopLevelFolders .cloudmanager
 
 pushRemote="$(readConfigValue "${configFile}" "cmreactor.pushremote" "adobe")"
 pushPrefix="$(readConfigValue "${configFile}" "cmreactor.pushprefix" "cmreactor/")"
